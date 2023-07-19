@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "all-dunders"
+version = "0.1.0"
+description = ""
+authors = ["marcinplatek <maruplat@gmail.com>"]
+readme = "README.md"
+packages = [{include = "all_dunders", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.jupyter.dependencies]
+ipykernel = "^6.24.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
